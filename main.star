@@ -27,7 +27,7 @@ def run(plan):
         )
 
 def fake_service_config(image):
-    """ This is a fake service config that is used to build the image.
+    """ This is a fake service config that is used to force building the image.
 
     It is not used to actually run the service.
 
@@ -41,7 +41,7 @@ def fake_service_config(image):
         image = image,
 
         entrypoint = [
-            "bash"
+            "/bin/sh"
         ],
         cmd = [
             "-c",
