@@ -1,4 +1,4 @@
-name: github.com/sigma/imgbuilder
+name: github.com/sigma/op-nix-imgbuilder
 description: |-
   Kurtosis package for building external images
 replace: {}
