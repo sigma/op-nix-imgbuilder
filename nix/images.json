@@ -1,0 +1,7 @@
+{
+    "op-geth": {
+        "repository": "https://github.com/ethereum-optimism/op-geth",
+        "revision": "v1.101503.1",
+        "sha256": "sha256-1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef"
+    }
+}
