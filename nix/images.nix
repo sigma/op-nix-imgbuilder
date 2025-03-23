@@ -70,8 +70,15 @@
         copyToRoot =
           args.copyToRoot
           ++ [
-            # we need basic shell capabilities
-            pkgs.dash
+            # Create a proper /bin/sh symlink using buildEnv
+            (pkgs.buildEnv {
+              name = "bin";
+              paths = [pkgs.dash];
+              pathsToLink = ["/bin"];
+              postBuild = ''
+                ln -sf dash $out/bin/sh
+              '';
+            })
             pkgs.coreutils
             # add CA certificates for convenience
             pkgs.cacert
