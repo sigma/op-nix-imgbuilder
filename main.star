@@ -41,7 +41,7 @@ def fake_service_config(image):
         image = image,
 
         entrypoint = [
-            "/bin/dash"
+            "/bin/sh"
         ],
         cmd = [
             "-c",
