@@ -36,6 +36,7 @@ in
       op-reth
     ];
     config = {
+      Entrypoint = ["/bin/op-reth"];
       ExposedPorts = {
         "7545/tcp" = {};
         "8545/tcp" = {};
