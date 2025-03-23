@@ -3,5 +3,10 @@
         "repository": "https://github.com/ethereum-optimism/op-geth",
         "revision": "v1.101503.1",
         "sha256": "sha256-6PS6vUy91Z5ryS6xLltvvwCuStBPrFv9E3T+WW0miU8="
+    },
+    "op-reth": {
+        "repository": "https://github.com/paradigmxyz/reth",
+        "revision": "v1.3.4",
+        "sha256": "sha256-AowVcz37d7+W37tB/hAvxndP+91/K9EleabwtSCXscg="
     }
 }
