@@ -10,11 +10,11 @@
 
     nativeBuildInputs = with pkgs; [
       go
-      gnumake
     ];
 
     buildPhase = ''
-      HOME=$TMPDIR make geth
+      # set HOME to a valid directory for golangci-lint
+      HOME=$TMPDIR ${pkgs.gnumake}/bin/make geth
     '';
 
     installPhase = ''
